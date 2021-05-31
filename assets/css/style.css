@@ -13,8 +13,13 @@ body {
   
   .footer {
     background-color: #f5f5f5;
+
   }
 
+  .social {
+    text-align: center;
+    display: inline-block;
+  }
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
