@@ -1,9 +1,9 @@
 body {
     padding-bottom: 3rem;
     color: #5a5a5a;
+    font-family: 'Roboto', sans-serif;
   }
 
-  
 
   .container-footer {
     width: auto;
@@ -39,6 +39,9 @@ body {
     letter-spacing: -.05rem;
   }
   
+  h5 {
+      font-weight: 300;
+  }
   
   @media (min-width: 40em) {
     .carousel-caption p {

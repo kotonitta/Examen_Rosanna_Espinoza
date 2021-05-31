@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Kartendeck</title>
@@ -22,17 +25,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#carrusel">inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">¿quién soy?</a>
+                    <a class="nav-link" href="#form">¿quién soy?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">portafolio</a>
+                    <a class="nav-link" href="#portafolio">portafolio</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contacto</a>
+                    <a class="nav-link" href="#form">contacto</a>
 
                 </li>
             </ul>
@@ -40,7 +43,7 @@
     </nav>
 
 
-    <section class="carrusel">
+    <section class="carrusel" id="carrusel">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -86,18 +89,19 @@
         </div>
     </section>
 
-    <section>
+    <section id="jumbotrones">
         <div class="jumbotron">
             <h1 class="display-4">Hola!</h1>
             <p class="lead">Somos un equipo creativo capaz de convertir tus ideas en realidad</p>
             <hr class="my-4">
             <p>Diseño, modelado y texturizado 3D, creación e integración en motores de Videojuego y más</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">conócenos</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button" class="btn button-box py-3 mx-4"
+                data-toggle="tooltip" data-placement="right" title="agréganos a tus favoritos">conócenos</a>
         </div>
     </section>
 
 
-    <section class="cards-redondas">
+    <section class="cards-redondas" id="cards-redondas">
         <div class="container marketing">
             <div class="row">
                 <div class="col-lg-4">
@@ -107,34 +111,44 @@
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
                     <h2>Arte Abstracto</h2>
+                    <br>
                     <p> ...un punto donde se ha parado el artista para tomar aliento en la
                         búsqueda de su problema.</p>
-                    <p><a class="btn btn-secondary" href="#">más &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="https://www.instagram.com/kartendeck/" role="button"
+                            class="btn button-box py-3 mx-4" data-toggle="tooltip" data-placement="bottom"
+                            title="visita nuestro Insta">más &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="/assets/img/FunkoRO3.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <img src="/assets/img/FunkoRO3.png" class="bd-placeholder-img rounded-circle" width="140"
+                        height="140" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
+                    <br>
                     <h2>Diseño 3D</h2>
+                    <br>
                     <p> Modelado, animación y texturizado de elementos 3D</p>
-                    <p><a class="btn btn-secondary" href="#">más &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="https://www.instagram.com/kartendeck/" role="button"
+                            class="btn button-box py-3 mx-4" data-toggle="tooltip" data-placement="bottom"
+                            title="visita nuestro Insta">más &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="/assets/img/mario_voxel9.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <img src="/assets/img/mario_voxel9.png" class="bd-placeholder-img rounded-circle" width="140"
+                        height="140" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
-                    <h2>Integración en motores de Videojuegos</h2>
+                    <br>
+                    <h2>Integración en motores de VJ</h2>
                     <p> Unity & Unreal Engine</p>
-                    <p><a class="btn btn-secondary" href="#">más &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="https://www.instagram.com/kartendeck/" role="button"
+                            class="btn button-box py-3 mx-4" data-toggle="tooltip" data-placement="bottom"
+                            title="visita nuestro Insta">más &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
 
-            <section class="form">
+            <section class="form" id="form">
                 <br>
                 <div style="text-align:center;"> <a class="typeform-share button"
                         href="https://form.typeform.com/to/NobzNMhD?typeform-medium=embed-snippet" data-mode="popup"
@@ -160,65 +174,73 @@
             </section>
 
             <!-- PRESENTACION PORTAFOLIO -->
+            <section class="portafolio" id="portafolio">
+                <hr class="featurette-divider">
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">MAQUETA MUNDO MARIO BROS<span class="text-muted"> ~ ZETI 64</span></h2>
-                    <p class="lead">Realización de maquieta Mario Bros en un mundo creado 100% en base a instrucciones del cliente. Un joven de 11 años. Convertimos tus ideas en realidad </p>
-                </div>
-                <div class="col-md-5">
-                    <img src="assets/img/mario_voxel9.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500"  role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">MAQUETA MUNDO MARIO BROS<span class="text-muted"> ~ ZETI
+                                64</span></h2>
+                        <p class="lead">Realización de maquieta Mario Bros en un mundo creado 100% en base a
+                            instrucciones del cliente. Un joven de 11 años. Convertimos tus ideas en realidad </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="assets/img/mario_voxel9.png"
+                            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="500" height="500" role="img" aria-label="Placeholder: 500x500"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">zeti for unity</text>
-                </img>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">zeti
+                            for unity</text>
+                        </img>
 
+                    </div>
                 </div>
-            </div>
 
-            <hr class="featurette-divider">
+                <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Departamento 203<span class="text-muted">~ Antes de comprar, debía decorar</span></h2>
-                    <p class="lead">Modelo de departamento 3D para inicio de decoración en departamentos piloto. Proyección de tamaños y assets para decoración de interiores</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="/assets/img/imagen (1).jpg " class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Departamento 203<span class="text-muted">~ Antes de comprar,
+                                debía decorar</span></h2>
+                        <p class="lead">Modelo de departamento 3D para inicio de decoración en departamentos piloto.
+                            Proyección de tamaños y assets para decoración de interiores</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="/assets/img/imagen (1).jpg "
+                            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="500" height="500" role="img" aria-label="Placeholder: 500x500"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">El clan del 203</text>
-                </img>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">El
+                            clan del 203</text>
+                        </img>
 
+                    </div>
                 </div>
-            </div>
 
-            <hr class="featurette-divider">
+                <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading"> Mundo Pop ~ <span class="text-muted">Ro para Funko</span></h2>
-                    <p class="lead">Diseño 3D de Ro versión Funko para impresión. Modelo procesado e impreso exitosamente. Todos podemos ser un funko</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="/assets/img/FunkoRO3.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading"> Mundo Pop ~ <span class="text-muted">Ro para Funko</span></h2>
+                        <p class="lead">Diseño 3D de Ro versión Funko para impresión. Modelo procesado e impreso
+                            exitosamente. Todos podemos ser un funko</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="/assets/img/FunkoRO3.png"
+                            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="500" height="500" role="img" aria-label="Placeholder: 500x500"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">Funko Ro</text>
-                </img>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">Funko
+                            Ro</text>
+                        </img>
 
+                    </div>
                 </div>
-            </div>
 
-            <hr class="featurette-divider">
+                <hr class="featurette-divider">
 
         </div>
         </main>
@@ -229,7 +251,8 @@
 
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; Kartendeck ~ Un proyecto zetistico &middot; <a href="#">No es privado, es público</a> &middot; <a href="#">No tenemos términos</a></p>
+        <p>&copy; Kartendeck ~ Un proyecto zetistico &middot; <a href="#">No es privado, es público</a> &middot; <a
+                href="#">No tenemos términos</a></p>
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
